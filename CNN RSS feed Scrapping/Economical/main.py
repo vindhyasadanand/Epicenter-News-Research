@@ -15,5 +15,5 @@ for item in items:
     pub_date.append(item.pubdate.text)
     des.append(item.description.text.split('<img')[0])
 
-df = pd.DataFrame(list(zip(headline, pub_date, des)), columns=['Headline','Publish Date','Description'])
+df = pd.DataFrame(list(zip(headline, pub_date, des)), columns=['Headline','Publish Date & Time','Description'])
 df.to_csv('D:/Epicenter-News-Research/CNN RSS feed Scrapping/Economical/economical.csv')
